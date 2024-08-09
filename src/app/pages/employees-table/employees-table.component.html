@@ -1,0 +1,20 @@
+<!-- Zadatak 1-->
+<ng-container *ngIf="filteredEmployees.length; else loading">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Total time in Month</th>
+            <th>Actions</th>
+        </tr>
+        <ng-container *ngFor="let o of filteredEmployees;index as i">
+            <tr [ngClass]="o.totalHourse | bcolor">
+                <td>{{o.fullName}}</td>
+                <td>{{o.totalHourse}} hrs</td>
+                <td><a [attr.data-icon]="o.fullName" href="#">Edit</a></td>
+            </tr>
+        </ng-container>
+    </table>
+</ng-container>
+<ng-template #loading>
+    <app-spinner></app-spinner>
+</ng-template>
