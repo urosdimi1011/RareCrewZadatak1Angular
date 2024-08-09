@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BcolorPipe } from './pages/employees-table/pipes/bcolor.pipe';
 import { NgChartsModule } from 'ng2-charts';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { AppPieChartComponent } from './pages/employees-table/components/pie-chart/pie-chart.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     HeaderComponent,
     BcolorPipe,
     SpinnerComponent,
+    AppPieChartComponent,
   ],
   imports: [
     BrowserModule,

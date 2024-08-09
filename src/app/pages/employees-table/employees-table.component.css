@@ -1,3 +1,22 @@
 .highlight {
     background-color: rgb(255, 107, 107);
 }
+th{
+    background-color: silver;
+    text-align: left;
+    padding-left: 7px;
+}
+td{
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left
+}
+table{
+    border: 1px solid silver;
+    border-collapse: collapse;
+}
+.mojaKlasa{
+    display: block;
+    width: 500px !important;
+    height: 300px !important;
+}

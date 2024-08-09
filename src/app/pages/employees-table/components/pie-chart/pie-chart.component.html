@@ -1,0 +1,5 @@
+<div *ngIf="lineChartData && lineChartData.labels.length">
+    <canvas baseChart width="300px" height="400px" [labels]="lineChartData.labels" type="pie"
+        [data]="lineChartData" [options]="lineChartOptions"></canvas>
+</div>
+
